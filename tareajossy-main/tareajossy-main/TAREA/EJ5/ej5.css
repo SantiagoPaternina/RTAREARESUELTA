@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #e4e4e4;
+    color: #0e0d0d;
+    text-align: center;
+    padding: 30px;
+}
+
+main {
+    flex: 1; /* Hace que main ocupe el espacio restante entre header y footer */
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    height: calc(100vh - 80px); /* Ajusta la altura de main para ocupar el resto de la pantalla, considerando el header y el footer */
+}
+
+article {
+    flex: 2; /* Doble ancho comparado con nav y aside */
+    background-color: #686868;
+    padding: 10px;
+}
+
+nav, aside {
+    flex: 1; /* Ancho igual para nav y aside */
+    background-color: #b3b3b3;
+    padding: 10px;
+}
+
+header h1, footer {
+    margin: 0;
+}
+
+footer {
+    background-color: #ebebeb;
+    color: #070707;
+    text-align: center;
+    padding: 20px;
+}
